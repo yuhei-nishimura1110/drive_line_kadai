@@ -1,6 +1,6 @@
-package question;
+package curriculum_A;
 
-public class Question1_4_1_8 {
+public class Qes1_13 {
 	public static void main(String[] args) {
 		// 1
 		
@@ -163,10 +163,21 @@ public class Question1_4_1_8 {
 		
 		
 		// 9
-		//　年齢,身長,体重を2倍にしてnameinfoメソッドを起動
-		nameinfo(name,age*2,height*2,weight*2,food);
+		// ★年齢を自己代入で2倍★
+		age *= 2;
+		// ★身長を自己代入で2倍★
+		height *= 2;
+		// ★体重を自己代入で2倍★
+		weight *= 2;
+		//　★年齢,身長,体重を代入してnameinfoメソッドを起動★
+		nameinfo(name,age,height,weight,food);
 		System.out.println("");
-		
+		// ★年齢を自己代入で半分にする★
+		age /= 2;
+		// ★身長を自己代入で半分にする★
+		height /= 2;
+		// ★体重を自己代入で半分にする★
+		weight /= 2;
 		
 		// 10
 		// 25歳以上ならtrueを出力する。そうでなければfalseを出力する。
