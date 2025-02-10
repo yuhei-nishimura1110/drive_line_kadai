@@ -3,7 +3,7 @@ package curriculum28.animal;
 import curriculum28.Animal;
 
 public class Panda extends Animal{
-	public void Animal(int length, int speed){
+	public void Animal(String length, String speed){
 		setName("パンダ");
 		setTechnicalName("アイルロポダ・メラノレウカ");
 		setLength(length);
