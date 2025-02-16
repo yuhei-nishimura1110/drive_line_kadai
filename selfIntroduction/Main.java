@@ -3,9 +3,10 @@ package selfIntroduction;
 public class Main {
 	public static void main(String[] args) {
 		Person person1 = new Person("鈴木太郎", 20, 1.7, 60);
-		System.out.println(person1.getName());
-		System.out.println(person1.getAge());
-		System.out.println(person1.getHeight());
-	
-  }
+		person1.print();
+
+		Person person2 = new Person("山田花子", 22, 1.5, 40);
+		person2.print();
+		person2.printCount();
+	}  
 }
