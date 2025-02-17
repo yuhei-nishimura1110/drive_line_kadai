@@ -1,4 +1,4 @@
-package selfIntroduction;
+package selfIntroduction.in31;
 
 public class Main {
 	public static void main(String[] args) {
@@ -7,6 +7,6 @@ public class Main {
 
 		Person person2 = new Person("山田花子", 22, 1.5, 40);
 		person2.print();
-		person2.printCount();
+		Person.printCount();
 	}  
 }

@@ -1,4 +1,4 @@
-package selfIntroduction;
+package selfIntroduction.in31;
 
 public class Person {
 	// インスタンスフィールドを定義
@@ -6,7 +6,7 @@ public class Person {
 	private int age;
 	private double height;
 	private double weight;
-	private int count = 0;
+	private static int count = 0;
 	private String lastName;
 	public String getName() {
 		return this.name;
@@ -20,8 +20,8 @@ public class Person {
 	public double getWeight() {
 		return this.weight;
 	}
-	public int getCount() {
-		return this.count;
+	public static int getCount() {
+		return Person.count;
 	}
 	public String getLastName() {
 		return this.lastName;
@@ -39,19 +39,12 @@ public class Person {
 		this.weight = weight;
 	}
 	public void setCount(int count) {
-		this.count = count;
+		Person.count = count;
 	}
 	// コンストラクタを定義しインスタンスフィールドに値をセット
 	Person(String name,int age, double height,double weight){
-		this.count ++;
+		Person.count ++;
 		setName(name);
-		setAge(age);
-		setHeight(height);
-		setWeight(weight);
-	}
-	Person(String firstName,String lastName,int age, double height,double weight){
-		this.count ++;
-		setName(firstName + lastName);
 		setAge(age);
 		setHeight(height);
 		setWeight(weight);
@@ -67,9 +60,9 @@ public class Person {
 		System.out.println("BMIは" + bmi() + "です");
 		
 	}
-	public void printCount() {
+	public static void printCount() {
 		
-		System.out.println("合計" + this.count +"人です");
+		System.out.println("合計" + Person.getCount() +"人です");
 	}
 	
 }
