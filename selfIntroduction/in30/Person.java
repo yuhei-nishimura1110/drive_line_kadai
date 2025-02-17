@@ -51,7 +51,7 @@ public class Person {
 	}
 	
 	public double bmi() {
-		return this.weight / this.height / this.height;
+		return Double.valueOf(String.format("%.1f",this.weight / this.height / this.height));
 	}
 	public void print() {
 		
